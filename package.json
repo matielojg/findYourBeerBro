@@ -2,12 +2,17 @@
   "name": "nodejs",
   "version": "1.0.0",
   "description": "npm init -y",
-  "main": "index.js","dev": "nodemon server.js",
+  "main": "index.js",
+  "dev": "node --watch server.js",
+  "type": "module",
   "scripts": {
     "dev": "node --watch server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
