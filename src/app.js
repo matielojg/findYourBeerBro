@@ -12,4 +12,9 @@ app.get('/', (req, res) => {
 app.get('/marcas', (req, res) => {
     res.status(200).json(marcas);
 })
+app.post('/marcas', (req, res) => {
+    marcas.push(req.body);
+    res.status(201).send('Marca foi cadastrada com sucesso')
+
+})
 export default app
