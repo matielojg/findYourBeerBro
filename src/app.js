@@ -19,11 +19,6 @@ app.get('/marcas/:id', (req, res) => {
     res.json(marcas[index]);
 })
 
-app.put('/marcas/:id', (req, res) => {
-    let index = buscaMarca(req.params.id);
-    marcas[index].marca = req.body.marca;
-    res.json(marcas);
-})
 app.delete('/marcas/:id', (req, res) => {
     let { id } = req.params;
     let index = buscaMarca(id);

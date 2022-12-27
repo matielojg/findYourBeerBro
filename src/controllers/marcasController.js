@@ -6,6 +6,16 @@ class MarcaController {
             res.status(200).json(marcas)
         })
     }
+    static listarMarcaPorId = (req, res) => {
+        const id = req.params.id;
+        marcas.findById(id, (err, marcas) => {
+            if (err) {
+                res.status(400).send({ message: `${err.message} - Id da marca não localizada.` })
+            } else {
+                res.status(200).send(marcas);
+            }
+        });
+    }
     static cadastrarMarca = (req, res) => {
         let marca = new marcas(req.body);
         marca.save((err) => {
