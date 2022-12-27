@@ -6,4 +6,5 @@ const router = express.Router();
 router
     .get("/marcas", MarcaController.listarMarcas)
     .post("/marcas", MarcaController.cadastrarMarca)
+    .put("/marcas/:id", MarcaController.atualizarMarca)
 export default router;
