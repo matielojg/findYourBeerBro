@@ -1,6 +1,8 @@
 import express from "express";
 
 import db from "./config/dbConnect.js"
+// import livros from "./models/livro.js"
+import marcas from "./models/Marca.js";
 
 db.on("error", console.log.bind(console, 'Erro de conexão!'));
 db.once("open", () => {
@@ -10,16 +12,18 @@ const app = express();
 
 app.use(express.json())
 
-const marcas = [
-    { id: 1, "marca": "brahma" },
-    { id: 2, "marca": "Skol" }
-]
+// const marcas = [
+//     { id: 1, "marca": "brahma" },
+//     { id: 2, "marca": "Skol" }
+// ]
 app.get('/', (req, res) => {
     res.status(200).send('Curso de Node');
 })
-app.get('/marcas', (req, res) => {
-    res.status(200).json(marcas);
-})
+// app.get('/marcas', (req, res) => {
+//     marcas.find((err, marcas) => {
+//         res.status(200).json(marcas);
+//     })
+// })
 app.get('/marcas/:id', (req, res) => {
     let index = buscaMarca(req.params.id);
     res.json(marcas[index]);
