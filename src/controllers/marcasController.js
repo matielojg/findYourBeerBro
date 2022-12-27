@@ -36,5 +36,16 @@ class MarcaController {
             )
         })
     }
+    static excluirMarca = (req, res) => {
+        const id = req.params.id;
+        marcas.findByIdAndDelete(id, (err) => {
+            if (!err) {
+                res.status(200).send({ message: 'Marca removida com sucesso' });
+            } else {
+                res.status(500).send({ message: err.message });
+            }
+        })
+    }
 }
+
 export default MarcaController

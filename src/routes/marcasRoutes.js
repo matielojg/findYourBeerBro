@@ -8,4 +8,5 @@ router
     .get("/marcas/:id", MarcaController.listarMarcaPorId)
     .post("/marcas", MarcaController.cadastrarMarca)
     .put("/marcas/:id", MarcaController.atualizarMarca)
+    .delete("/marcas/:id", MarcaController.excluirMarca)
 export default router;
