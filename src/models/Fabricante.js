@@ -11,4 +11,4 @@ const fabricanteSchema = new mongoose.Schema(
 
 )
 const fabricantes = mongoose.model("fabricantes", fabricanteSchema)
-export default fabricantes;
+export default fabricantes; 
