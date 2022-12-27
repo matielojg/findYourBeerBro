@@ -18,10 +18,7 @@ app.get('/marcas/:id', (req, res) => {
     let index = buscaMarca(req.params.id);
     res.json(marcas[index]);
 })
-app.post('/marcas', (req, res) => {
-    marcas.push(req.body);
-    res.status(201).send('Marca foi cadastrada com sucesso')
-})
+
 app.put('/marcas/:id', (req, res) => {
     let index = buscaMarca(req.params.id);
     marcas[index].marca = req.body.marca;
