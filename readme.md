@@ -1,14 +1,13 @@
 
-# Curso Node.js: API Rest com Express e MongoDB
-*** ao invés de livraria eu adaptei para cerveja>marcas>fabricante>distribuidoras =] <br>
-https://cursos.alura.com.br/course/nodejs-api-rest-express-mongodb
-##
-- Criado uma API do zero, seguindo o estilo arquitetural REST;
-- Aplicado boas práticas na separação dos pacotes através de models,controllers e rotas;
-- Requisições com os principais verbos HTTP;
-- Utilizado o framework Express, largamente aplicado para desenvolver aplicações robustas e escaláveis;
-- API conectada com um banco de dados MongoDB em nuvem;
-- Crie buscas por campos específicos na API
+# [Curso Node.js: API Rest com Express e MongoDB](https://cursos.alura.com.br/course/nodejs-api-rest-express-mongodb)
+
+## O que aprendi:
+- Criar uma API do zero, seguindo o estilo arquitetural REST;
+- Aplicar boas práticas na separação dos pacotes através de models,controllers e rotas;
+- Fazer requisições com os principais verbos HTTP;
+- Utilizar o framework Express, largamente aplicado para desenvolver aplicações robustas e escaláveis;
+- Conectar a API com um banco de dados MongoDB em nuvem;
+- Criar buscas por campos específicos na API
 
 
 ## Comando para rodar o projeto:
